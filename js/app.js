@@ -27,11 +27,15 @@ const showProducts = (products) => {
       <p>Rating: ${product.rating.rate}</p>
       <p>Rating Number:  ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
-      <button id="details-btn" class="btn btn-warning">Details</button></div>
+      <button id="details-btn" class="btn btn-success">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+
+// Add to Cart product Count
+
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
