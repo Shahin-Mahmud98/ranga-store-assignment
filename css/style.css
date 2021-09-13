@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* .rangoboti{
+  font-weight: bold;
+} */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -12,21 +15,38 @@ body {
   outline: none;
   border: none;
 }
+
+/* Search Box */
+
 .search-box {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 500px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 25px;
   border-right: none;
 }
+
+/* Search Button */
+
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
+  background-color:gray ;
+  padding: 10px 30px;
+  border-radius: 5px;
   margin-left: 20px;
+  
 }
+/* search button hover */
+.search-button:hover{
+   outline: none;
+  /* border: none; */
+}
+
+/* All Products */
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,23 +57,40 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* Single Product */
+
 .single-product {
+  
+  height: 100%;
+  width: 100%;
   padding: 10px;
   transition: 0.6s;
 }
+
+/* Single Product Hover: */
+
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid cyan;
 }
+
+/* Product Image */
+
 .product-image {
   width: 150px;
   height: 150px;
+  
 }
+
+/* Cart */
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
+  background-color:rgb(196, 195, 197);
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
@@ -61,12 +98,19 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+  
 }
+
+/* Media Query */
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+/* Cart */
+
   .cart {
     width: 300px;
     /* border: 1px solid green; */
@@ -78,8 +122,13 @@ body {
   }
   .cart-main {
     padding-right: 10px;
+    
   }
+ 
 }
+
+/* Media Query */
+
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
